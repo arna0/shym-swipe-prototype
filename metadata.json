@@ -1,0 +1,6 @@
+{
+  "name": "Шымкент Свайп — Prisma Schema & DB Core",
+  "description": "Умная городская платформа для жителей Шымкента: ИИ-кластеризация дубликатов в радиусе 30м (FastAPI), PWA и Telegram Mini App, геймификация с еженедельным Топ-10 урбанистов, и дашборд Акимата / ЕКЦ 109 с Chart.js и Leaflet картой.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
