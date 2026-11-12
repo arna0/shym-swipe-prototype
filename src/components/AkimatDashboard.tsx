@@ -351,7 +351,7 @@ export const AkimatDashboard: React.FC<AkimatDashboardProps> = ({
             {onSeedDemoData && (
               <button
                 onClick={onSeedDemoData}
-                className="px-4 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white rounded-xl text-xs font-bold shadow-lg flex items-center gap-2 transition"
+                className="px-4 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold shadow-lg flex items-center gap-2 transition"
               >
                 <Sparkles className="w-4 h-4" />
                 <span>+50 Демо-точек (Питч)</span>
@@ -359,7 +359,7 @@ export const AkimatDashboard: React.FC<AkimatDashboardProps> = ({
             )}
 
             <div className="flex items-center gap-2.5 bg-slate-900/80 px-4 py-2.5 rounded-xl border border-sky-500/30">
-              <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)] animate-pulse" />
+              <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
               <div className="text-left">
                 <div className="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Шлюз ЕКЦ 109</div>
                 <div className="text-xs font-bold text-emerald-400">Шымкент Online</div>

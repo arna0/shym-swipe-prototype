@@ -159,8 +159,8 @@ export const UrbanistGamification: React.FC<UrbanistGamificationProps> = ({
   return (
     <div className="max-w-4xl mx-auto p-4 sm:p-6 space-y-6">
       {/* Top Hero Card with XP & Rank */}
-      <div className="bg-gradient-to-br from-slate-900 via-indigo-950 to-sky-950 rounded-3xl p-6 sm:p-8 text-white shadow-2xl border border-sky-500/30 relative overflow-hidden">
-        <div className="absolute right-0 top-0 w-80 h-80 bg-sky-500/10 rounded-full blur-3xl -z-0"></div>
+      <div className="bg-slate-900 rounded-3xl p-6 sm:p-8 text-white shadow-2xl border border-sky-500/30 relative overflow-hidden">
+        <div className="absolute right-0 top-0 w-80 h-80 bg-sky-500/10 rounded-full blur-3xl hidden -z-0"></div>
 
         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="flex items-center gap-4">
@@ -170,7 +170,7 @@ export const UrbanistGamification: React.FC<UrbanistGamificationProps> = ({
                 alt={currentUser.fullName}
                 className="w-20 h-20 rounded-2xl object-cover border-2 border-sky-400/80 shadow-lg bg-slate-800"
               />
-              <span className="absolute -bottom-2 -right-2 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-900 font-extrabold text-xs px-2 py-0.5 rounded-full border border-white shadow-md">
+              <span className="absolute -bottom-2 -right-2 bg-amber-500 text-slate-900 font-extrabold text-xs px-2 py-0.5 rounded-full border border-white shadow-md">
                 Lvl {levelInfo.level}
               </span>
             </div>
@@ -208,7 +208,7 @@ export const UrbanistGamification: React.FC<UrbanistGamificationProps> = ({
               className={`px-4 py-2 rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-md ${
                 claimedToday
                   ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 cursor-default'
-                  : 'bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950'
+                  : 'bg-amber-500 hover:bg-amber-400 text-slate-950'
               }`}
             >
               {claimedToday ? (
@@ -239,7 +239,7 @@ export const UrbanistGamification: React.FC<UrbanistGamificationProps> = ({
 
           <div className="w-full h-3.5 bg-slate-800/80 rounded-full overflow-hidden p-0.5 border border-white/10">
             <div
-              className="h-full bg-gradient-to-r from-sky-400 via-indigo-400 to-emerald-400 rounded-full transition-all duration-700 shadow-[0_0_12px_rgba(56,189,248,0.5)]"
+              className="h-full bg-sky-400 rounded-full transition-all duration-700"
               style={{ width: `${levelInfo.progressPercent}%` }}
             />
           </div>
@@ -326,7 +326,7 @@ export const UrbanistGamification: React.FC<UrbanistGamificationProps> = ({
                     <div
                       className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs shrink-0 ${
                         isFirst
-                          ? 'bg-gradient-to-br from-amber-400 to-yellow-500 text-slate-950 shadow-md ring-2 ring-amber-300'
+                          ? 'bg-amber-400 text-slate-950 shadow-md ring-2 ring-amber-300'
                           : isSecond
                           ? 'bg-slate-300 text-slate-800 shadow'
                           : isThird

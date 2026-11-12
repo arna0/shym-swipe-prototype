@@ -225,7 +225,7 @@ export const SwipeEkcTester: React.FC = () => {
               onClick={() => setActiveTab('SIMULATOR')}
               className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'SIMULATOR'
-                  ? 'bg-cyan-500 text-black shadow-[0_0_15px_rgba(34,211,238,0.25)]'
+                  ? 'bg-cyan-500 text-black'
                   : 'bg-white/5 text-gray-400 hover:text-white'
               }`}
             >
@@ -235,7 +235,7 @@ export const SwipeEkcTester: React.FC = () => {
               onClick={() => setActiveTab('EKC_TICKET')}
               className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'EKC_TICKET'
-                  ? 'bg-cyan-500 text-black shadow-[0_0_15px_rgba(34,211,238,0.25)]'
+                  ? 'bg-cyan-500 text-black'
                   : 'bg-white/5 text-gray-400 hover:text-white'
               }`}
             >
@@ -245,7 +245,7 @@ export const SwipeEkcTester: React.FC = () => {
               onClick={() => setActiveTab('SWIPE_SERVICE_CODE')}
               className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'SWIPE_SERVICE_CODE'
-                  ? 'bg-cyan-500 text-black shadow-[0_0_15px_rgba(34,211,238,0.25)]'
+                  ? 'bg-cyan-500 text-black'
                   : 'bg-white/5 text-gray-400 hover:text-white'
               }`}
             >
@@ -255,7 +255,7 @@ export const SwipeEkcTester: React.FC = () => {
               onClick={() => setActiveTab('EKC_SERVICE_CODE')}
               className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'EKC_SERVICE_CODE'
-                  ? 'bg-cyan-500 text-black shadow-[0_0_15px_rgba(34,211,238,0.25)]'
+                  ? 'bg-cyan-500 text-black'
                   : 'bg-white/5 text-gray-400 hover:text-white'
               }`}
             >
@@ -321,7 +321,7 @@ export const SwipeEkcTester: React.FC = () => {
         >
           <div className="flex items-center gap-2.5">
             {notification.type === 'escalation' ? (
-              <Flame className="w-5 h-5 text-red-400 shrink-0 animate-bounce" />
+              <Flame className="w-5 h-5 text-red-400 shrink-0" />
             ) : notification.type === 'levelup' ? (
               <Sparkles className="w-5 h-5 text-cyan-400 shrink-0" />
             ) : (
@@ -414,8 +414,8 @@ export const SwipeEkcTester: React.FC = () => {
                       <div
                         className={`h-full transition-all duration-500 ${
                           currentProblem.swipeRightCount >= EKC109_ESCALATION_THRESHOLD
-                            ? 'bg-gradient-to-r from-orange-500 to-red-500 shadow-[0_0_10px_rgba(239,68,68,0.8)]'
-                            : 'bg-gradient-to-r from-cyan-500 to-blue-500'
+                            ? 'bg-orange-500'
+                            : 'bg-cyan-500'
                         }`}
                         style={{ width: `${Math.min(100, (currentProblem.swipeRightCount / EKC109_ESCALATION_THRESHOLD) * 100)}%` }}
                       />
@@ -485,7 +485,7 @@ export const SwipeEkcTester: React.FC = () => {
                 <button
                   onClick={handleSimulateThreshold}
                   disabled={loading || batchLoading}
-                  className="px-4 py-2 rounded-xl bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-400 hover:to-red-400 text-white font-semibold text-xs shadow-lg shadow-red-500/20 flex items-center gap-2 shrink-0 transition-all"
+                  className="px-4 py-2 rounded-xl bg-orange-500 hover:bg-orange-400 text-white font-semibold text-xs shadow-lg shadow-red-500/20 flex items-center gap-2 shrink-0 transition-all"
                 >
                   <Flame className={`w-4 h-4 ${batchLoading ? 'animate-spin' : ''}`} />
                   <span>{batchLoading ? 'Симуляция...' : 'Запустить 50 свайпов'}</span>
@@ -530,7 +530,7 @@ export const SwipeEkcTester: React.FC = () => {
                   </div>
                   <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-cyan-400 transition-all duration-300 shadow-[0_0_8px_rgba(34,211,238,0.5)]"
+                      className="h-full bg-cyan-400 transition-all duration-300"
                       style={{ width: `${userLevelInfo.progressPercent}%` }}
                     />
                   </div>

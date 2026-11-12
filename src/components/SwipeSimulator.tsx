@@ -148,8 +148,8 @@ export const SwipeSimulator: React.FC<SwipeSimulatorProps> = ({
   return (
     <div className="space-y-6">
       {/* Top Welcome & Mode Switcher Hero */}
-      <div className="bg-gradient-to-r from-slate-900 via-sky-950 to-indigo-950 rounded-2xl p-5 sm:p-6 border border-sky-500/30 text-white shadow-2xl relative overflow-hidden">
-        <div className="absolute right-0 top-0 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="bg-slate-900 rounded-2xl p-5 sm:p-6 border border-sky-500/30 text-white shadow-2xl relative overflow-hidden">
+        <div className="absolute right-0 top-0 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl hidden pointer-events-none" />
         
         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="space-y-1">
@@ -298,8 +298,8 @@ export const SwipeSimulator: React.FC<SwipeSimulatorProps> = ({
                         className={`h-2 flex-1 rounded-sm transition-all duration-300 ${
                           filled
                             ? isHigh
-                              ? 'bg-red-500 shadow-[0_0_6px_rgba(239,68,68,0.6)]'
-                              : 'bg-sky-400 shadow-[0_0_6px_rgba(56,189,248,0.6)]'
+                              ? 'bg-red-500'
+                              : 'bg-sky-400'
                             : 'bg-slate-800'
                         }`}
                       />
@@ -422,7 +422,7 @@ export const SwipeSimulator: React.FC<SwipeSimulatorProps> = ({
                       {/* Volunteer Button */}
                       <button
                         onClick={() => handleSwipe(SwipeType.UP_VOLUNTEER)}
-                        className="px-5 py-3.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white rounded-2xl text-xs font-bold uppercase tracking-wider active:scale-95 transition-all shadow-lg flex items-center gap-2"
+                        className="px-5 py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-2xl text-xs font-bold uppercase tracking-wider active:scale-95 transition-all shadow-lg flex items-center gap-2"
                       >
                         <HandHeart className="w-4 h-4 text-purple-200" />
                         <span>Помогу (+50 XP)</span>
@@ -507,7 +507,7 @@ export const SwipeSimulator: React.FC<SwipeSimulatorProps> = ({
               <span>Шлюз ЕКЦ 109</span>
             </h3>
             <div className="flex items-center gap-2.5 bg-slate-800/60 p-3 rounded-xl border border-slate-700/50">
-              <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)] animate-pulse" />
+              <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
               <span className="text-xs text-emerald-300 font-bold">Синхронизация активна</span>
             </div>
             <div className="mt-3 flex justify-between text-xs text-slate-300">

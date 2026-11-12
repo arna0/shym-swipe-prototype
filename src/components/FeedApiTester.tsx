@@ -193,7 +193,7 @@ export const FeedApiTester: React.FC = () => {
               onClick={() => setActiveTab('TESTER')}
               className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'TESTER'
-                  ? 'bg-cyan-500 text-black shadow-[0_0_15px_rgba(34,211,238,0.25)]'
+                  ? 'bg-cyan-500 text-black'
                   : 'bg-white/5 text-gray-400 hover:text-white'
               }`}
             >
@@ -203,7 +203,7 @@ export const FeedApiTester: React.FC = () => {
               onClick={() => setActiveTab('SERVICE_CODE')}
               className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'SERVICE_CODE'
-                  ? 'bg-cyan-500 text-black shadow-[0_0_15px_rgba(34,211,238,0.25)]'
+                  ? 'bg-cyan-500 text-black'
                   : 'bg-white/5 text-gray-400 hover:text-white'
               }`}
             >
@@ -213,7 +213,7 @@ export const FeedApiTester: React.FC = () => {
               onClick={() => setActiveTab('CONTROLLER_CODE')}
               className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'CONTROLLER_CODE'
-                  ? 'bg-cyan-500 text-black shadow-[0_0_15px_rgba(34,211,238,0.25)]'
+                  ? 'bg-cyan-500 text-black'
                   : 'bg-white/5 text-gray-400 hover:text-white'
               }`}
             >
@@ -223,7 +223,7 @@ export const FeedApiTester: React.FC = () => {
               onClick={() => setActiveTab('FORMULA')}
               className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'FORMULA'
-                  ? 'bg-cyan-500 text-black shadow-[0_0_15px_rgba(34,211,238,0.25)]'
+                  ? 'bg-cyan-500 text-black'
                   : 'bg-white/5 text-gray-400 hover:text-white'
               }`}
             >
@@ -427,7 +427,7 @@ export const FeedApiTester: React.FC = () => {
                       key={item.id}
                       className={`bg-[#0e0e11] rounded-2xl p-5 border transition-all relative overflow-hidden flex flex-col justify-between ${
                         isTopPriority
-                          ? 'border-cyan-500/40 shadow-[0_0_20px_rgba(34,211,238,0.1)] ring-1 ring-cyan-500/20'
+                          ? 'border-cyan-500/40 ring-1 ring-cyan-500/20'
                           : 'border-white/10 hover:border-white/20'
                       }`}
                     >

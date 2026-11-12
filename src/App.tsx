@@ -129,7 +129,7 @@ export default function App() {
 
       {/* Global Seed Notification Banner */}
       {seedNotification && (
-        <div className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-xs font-bold py-2.5 px-4 text-center shadow-lg animate-pulse flex items-center justify-center gap-2">
+        <div className="bg-emerald-600 text-white text-xs font-bold py-2.5 px-4 text-center shadow-lg animate-pulse flex items-center justify-center gap-2">
           <span>✨</span>
           <span>{seedNotification}</span>
         </div>

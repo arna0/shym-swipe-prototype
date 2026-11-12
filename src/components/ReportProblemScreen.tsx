@@ -356,7 +356,7 @@ export const ReportProblemScreen: React.FC<ReportProblemScreenProps> = ({
               onClick={() => setActiveTab('FORM')}
               className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'FORM'
-                  ? 'bg-cyan-500 text-black shadow-[0_0_15px_rgba(34,211,238,0.25)]'
+                  ? 'bg-cyan-500 text-black'
                   : 'bg-white/5 text-gray-400 hover:text-white'
               }`}
             >
@@ -366,7 +366,7 @@ export const ReportProblemScreen: React.FC<ReportProblemScreenProps> = ({
               onClick={() => setActiveTab('API_SPEC')}
               className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'API_SPEC'
-                  ? 'bg-cyan-500 text-black shadow-[0_0_15px_rgba(34,211,238,0.25)]'
+                  ? 'bg-cyan-500 text-black'
                   : 'bg-white/5 text-gray-400 hover:text-white'
               }`}
             >
@@ -421,7 +421,7 @@ export const ReportProblemScreen: React.FC<ReportProblemScreenProps> = ({
           {/* Success Modal / Banner when created */}
           {createdResult ? (
             <div className="bg-[#0e0e11] rounded-3xl p-8 border border-emerald-500/30 text-[#e0e0e2] shadow-2xl space-y-6 text-center animate-in fade-in zoom-in duration-300">
-              <div className="w-16 h-16 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl flex items-center justify-center mx-auto shadow-[0_0_20px_rgba(16,185,129,0.2)]">
+              <div className="w-16 h-16 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl flex items-center justify-center mx-auto">
                 <CheckCircle2 className="w-8 h-8 text-emerald-400" />
               </div>
 
@@ -487,7 +487,7 @@ export const ReportProblemScreen: React.FC<ReportProblemScreenProps> = ({
             /* Main Form Layout (Mobile PWA Container) */
             <form onSubmit={handleSubmit} className="bg-[#0e0e11] rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl space-y-8">
               {/* Quick 1-Click Demo Scenarios */}
-              <div className="bg-gradient-to-r from-cyan-950/40 via-slate-900 to-slate-900 p-4 rounded-2xl border border-cyan-500/20">
+              <div className="bg-cyan-950/40 p-4 rounded-2xl border border-cyan-500/20">
                 <div className="flex items-center justify-between mb-2.5">
                   <div className="flex items-center gap-2 text-xs font-bold text-cyan-300">
                     <Sparkles className="w-4 h-4 text-cyan-400" />
@@ -511,7 +511,7 @@ export const ReportProblemScreen: React.FC<ReportProblemScreenProps> = ({
 
               {/* Error Message */}
               {errorMsg && (
-                <div className="p-4 rounded-2xl bg-red-500/15 border border-red-500/40 text-red-300 text-xs flex items-center gap-2.5 animate-bounce">
+                <div className="p-4 rounded-2xl bg-red-500/15 border border-red-500/40 text-red-300 text-xs flex items-center gap-2.5">
                   <AlertCircle className="w-4 h-4 text-red-400 shrink-0" />
                   <span className="font-medium">{errorMsg}</span>
                 </div>
@@ -629,7 +629,7 @@ export const ReportProblemScreen: React.FC<ReportProblemScreenProps> = ({
                         onClick={() => setCategory(catKey)}
                         className={`p-3 rounded-2xl border text-left transition-all flex flex-col justify-between ${
                           isSelected
-                            ? 'bg-cyan-500/15 border-cyan-400 text-white shadow-[0_0_15px_rgba(34,211,238,0.2)]'
+                            ? 'bg-cyan-500/15 border-cyan-400 text-white'
                             : 'bg-black/30 border-white/5 hover:border-white/20 text-gray-400 hover:text-white'
                         }`}
                       >
@@ -805,7 +805,7 @@ export const ReportProblemScreen: React.FC<ReportProblemScreenProps> = ({
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-cyan-500 hover:bg-cyan-400 text-black font-bold text-xs tracking-wide shadow-[0_0_25px_rgba(34,211,238,0.35)] transition-all flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]"
+                  className="w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-cyan-500 hover:bg-cyan-400 text-black font-bold text-xs tracking-wide transition-all flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]"
                 >
                   <Send className={`w-4 h-4 ${isSubmitting ? 'animate-spin' : ''}`} />
                   <span>{isSubmitting ? 'Отправка в базу...' : 'Опубликовать проблему (+50 XP)'}</span>

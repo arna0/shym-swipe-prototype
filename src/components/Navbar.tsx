@@ -49,7 +49,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="flex items-center gap-3 cursor-pointer select-none"
             onClick={() => setActiveTab('simulator')}
           >
-            <div className="w-9 h-9 bg-gradient-to-tr from-sky-500 to-indigo-500 rounded-xl flex items-center justify-center font-black text-white text-base shadow-[0_0_15px_rgba(56,189,248,0.4)] border border-white/20">
+            <div className="w-9 h-9 bg-sky-500 rounded-xl flex items-center justify-center font-black text-white text-base border border-white/20">
               Ш
             </div>
             <div className="flex items-center gap-2.5">

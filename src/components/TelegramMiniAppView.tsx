@@ -173,7 +173,7 @@ export const TelegramMiniAppView: React.FC<TelegramMiniAppViewProps> = ({
 
           {/* Action Notification Toast */}
           {lastAction && (
-            <div className="p-2.5 rounded-xl bg-gradient-to-r from-sky-600 to-indigo-600 text-white text-xs font-semibold text-center animate-bounce shadow-md">
+            <div className="p-2.5 rounded-xl bg-sky-600 text-white text-xs font-semibold text-center shadow-md">
               {lastAction}
             </div>
           )}
@@ -266,7 +266,7 @@ export const TelegramMiniAppView: React.FC<TelegramMiniAppViewProps> = ({
 
                 <button
                   onClick={() => handleSwipeAction(SwipeType.RIGHT_IMPORTANT)}
-                  className="py-2.5 px-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white rounded-xl font-bold text-xs flex flex-col items-center justify-center gap-1 transition active:scale-95 shadow-md"
+                  className="py-2.5 px-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl font-bold text-xs flex flex-col items-center justify-center gap-1 transition active:scale-95 shadow-md"
                 >
                   <Flame className="w-4 h-4 text-amber-300" />
                   <span>Важно!</span>

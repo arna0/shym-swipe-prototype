@@ -155,7 +155,7 @@ export const ERDiagram: React.FC = () => {
               onClick={() => setSelectedModel(model.id)}
               className={`cursor-pointer rounded-2xl p-5 border transition-all duration-200 ${
                 isSelected
-                  ? 'bg-[#1a1a1e] border-cyan-500/40 shadow-[0_0_15px_rgba(34,211,238,0.15)] ring-1 ring-cyan-500/30'
+                  ? 'bg-[#1a1a1e] border-cyan-500/40 ring-1 ring-cyan-500/30'
                   : 'bg-[#0e0e11]/80 border-white/10 hover:border-white/20 hover:bg-[#1a1a1e]/50'
               }`}
             >
