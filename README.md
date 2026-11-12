@@ -2,7 +2,7 @@
 
 **A smart-city platform where residents of Shymkent swipe through city problems to decide what gets fixed first.**
 
-### ▶ [Live demo](https://arna0.github.io/shym-swipe-prototype/?lang=en): opens in the browser, nothing to install
+### ▶ [Live demo](https://arna0.github.io/shymkent-swipe/?lang=en): opens in the browser, nothing to install
 
 The interface is in Russian and English: use the RU / EN switch in the header.
 
