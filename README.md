@@ -2,6 +2,10 @@
 
 **A smart-city platform where residents of Shymkent swipe through city problems to decide what gets fixed first.**
 
+### ▶ [Live demo](https://arna0.github.io/shym-swipe-prototype/): opens in the browser, nothing to install
+
+> On GitHub Pages there is no server, so the demo runs the same API code inside your browser (`src/demo/mockApi.ts`). Data resets when you reload the page.
+
 Reporting a pothole or a broken streetlight usually means a phone call to the 109 hotline and no idea what happens next. Many people report the same problem, and the city can't tell what matters most. Shymkent Swipe turns this into a feed: residents report problems with a pin on the map, swipe on what others reported, and the city hall gets a ranked, de-duplicated list.
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)

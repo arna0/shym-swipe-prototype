@@ -9,6 +9,10 @@ export default defineConfig(() => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
+        // Static demo (GitHub Pages): no Node server, so Express must not be bundled.
+        ...(process.env.VITE_STATIC_DEMO === 'true'
+          ? { express: path.resolve(__dirname, 'src/demo/expressStub.ts') }
+          : {}),
       },
     },
     server: {
